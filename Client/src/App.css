@@ -84,7 +84,17 @@ button:hover {
   background-color: #008CBA;
 }
 
-#error-message {
-  color: red;
-  font-size: 14px;
+.connect-wallet-btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #FF5722;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.connect-wallet-btn:hover {
+  background-color: #E64A19;
 }
