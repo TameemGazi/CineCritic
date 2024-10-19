@@ -15,22 +15,18 @@ function App() {
     const rating = e.target.rating.value;
     const review = e.target.review.value;
 
-    // Simulate sending the review to the blockchain and earning tokens
     alert(`Your review for "${movieTitle}" has been submitted and you earned tokens!`);
-
-    // Simulate earning tokens
     setEarnedAIA(earnedAIA + 10);
-
-    // Hide the form
     setShowReviewForm(false);
-
-    // Reset form
     e.target.reset();
   };
 
   const handleWithdraw = () => {
     alert('Withdraw your earned AIA coins!');
-    // Simulate withdraw logic
+  };
+
+  const connectWallet = () => {
+    alert('Wallet connected!');
   };
 
   return (
@@ -44,6 +40,7 @@ function App() {
             <li><a href="#profile">Profile</a></li>
           </ul>
         </nav>
+        <button className="connect-wallet-btn" onClick={connectWallet}>Connect Wallet</button>
       </header>
 
       <section id="movies">
