@@ -61,7 +61,7 @@ const config: HardhatUserConfig = {
       gasPrice: 60000000000, // Example static gas price
     },
     aia: {
-      url: 'https://aia-dataseed1-testnet.aiachain.org',
+      url: 'cls',
       accounts: process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
       chainId: 1320,
       gasPrice: gasPrice, // Use static gas price for now

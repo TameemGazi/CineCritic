@@ -8,7 +8,7 @@ dotenv.config(); // Load environment variables from .env file
 // Define an asynchronous function to mint tokens
 export async function mint(recipientAddress :string, amount : BigNumber) {
   const contractAddress = process.env.CONTRACT_ADDRESS || ""; // Get contract address from environment variable
-  const SeedToken = await hre.ethers.getContractFactory("QuestToken"); // Get contract factory for FoodToken
+  const SeedToken = await hre.ethers.getContractFactory("MovieReviewToken"); // Get contract factory for FoodToken
   const seedToken = SeedToken.attach(contractAddress); // Attach to the deployed contract
 
   // Call the mint function of the contract
@@ -19,7 +19,7 @@ export async function mint(recipientAddress :string, amount : BigNumber) {
 }
 
 // Example usage: call the mint function with specified recipient and amount
-const recipientAddress = "0xB702203B9FD0ee85aeDB9d314C075D480d716635"; // Replace with the recipient's address
+const recipientAddress = "0x86A5B482eA2f9d157a88E2494269FC9A885Fa0b1"; // Replace with the recipient's address
 const amountToMint = hre.ethers.utils.parseUnits("10000", 18); // Specify the amount to mint (10 tokens in this example)
 
 // Execute the mint function
