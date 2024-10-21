@@ -84,17 +84,22 @@ button:hover {
   background-color: #008CBA;
 }
 
+/* Other existing styles */
+
 .connect-wallet-btn {
-  margin-top: 10px;
+  position: fixed;
+  top: 20px; /* Adjust top positioning */
+  right: 20px; /* Adjust right positioning */
   padding: 10px 20px;
-  background-color: #FF5722;
-  color: #fff;
-  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
   border: none;
+  border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  z-index: 1000; /* Ensure it's on top of everything */
 }
 
 .connect-wallet-btn:hover {
-  background-color: #E64A19;
+  background-color: #0056b3;
 }
+
